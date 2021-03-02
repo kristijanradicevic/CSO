@@ -7,24 +7,37 @@
 
     <title>Dobrodošli u CSO!</title>
 
+    <!-- AnimateCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Custom SASS -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="welcome">
-        <h1>Dobrodošli u CSO!</h1>
-        <p>Vi ste?</p>
+        <h1 class="animate__animated animate__fadeInLeft">Dobrodošli u CSO!</h1>
+        <p class="animate__animated animate__fadeInRight">Vi ste?</p>
     </div>
     <div class="container">
         <div class="left-side">
-            <h2>Kandidat</h2>
-            <ul>
-                <li>Saveti za polaganje vozačkog ispita</li>
-                <li>Priručnici</li>
-                <li>Konsultacije</li>
-            </ul>
+            <h2 class="animate__animated animate__fadeInLeft animate__delay-2s animate__faster">Kandidat</h2>
+            <div class="candidate-list">
+                <ul>
+                    <li class="animate__animated animate__fadeInLeft animate__delay-3s animate__faster">Saveti za polaganje vozačkog ispita</li>
+                    <li class="animate__animated animate__fadeInLeft animate__delay-4s animate__faster">Priručnici</li>
+                    <li class="animate__animated animate__fadeInLeft animate__delay-5s animate__faster">Konsultacije</li>
+                </ul>
+            </div>
         </div>
-        <div class="right-side"></div>
+        <div class="right-side">
+            <h2 class="animate__animated animate__fadeInRight animate__delay-2s animate__faster">Auto Škola</h2>
+            <div class="school-list">
+                <ul>
+                    <li class="animate__animated animate__fadeInRight animate__delay-3s animate__faster">Marketing</li>
+                    <li class="animate__animated animate__fadeInRight animate__delay-4s animate__faster">Saradnja</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>

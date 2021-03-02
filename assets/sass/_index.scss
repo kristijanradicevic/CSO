@@ -2,7 +2,7 @@
   padding: 2rem;
   display: flex;
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   position: relative;
   overflow: hidden;
   background-color: black;
@@ -19,23 +19,61 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-shadow: 2px 2px 6px #000000;
 
   h2 {
     color: yellow;
-    margin-bottom: 10rem;
+    margin-bottom: 9rem;
     text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
   }
-  ul {
-    color: yellow;
+
+  .candidate-list {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+
+    ul {
+      color: yellow;
+      list-style-position: inside;
+    }
   }
 }
 .right-side {
   background-image: url("./assets/img/school.jpg");
   margin-left: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 6px #000000;
+
+  h2 {
+    color: yellow;
+    margin-bottom: 9rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .school-list {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 2.2rem;
+
+    ul {
+      color: yellow;
+      list-style-position: inside;
+    }
+  }
 }
 .left-side,
 .right-side {
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 91vh;
   width: 50vw;

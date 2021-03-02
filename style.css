@@ -1,0 +1,102 @@
+/**************************/
+/*         Imports        */
+/**************************/
+/**************************/
+/* Google Fonts - Spartan */
+/**************************/
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/**************************/
+/*         Colors         */
+/**************************/
+.container {
+  padding: 2rem;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  box-shadow: inset 0px 0px 10px 1px yellow;
+  z-index: 1;
+}
+
+.left-side {
+  background-image: url("./assets/img/candidate.jpg");
+  margin-right: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side h2 {
+  color: yellow;
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+}
+
+.left-side ul {
+  color: yellow;
+}
+
+.right-side {
+  background-image: url("./assets/img/school.jpg");
+  margin-left: 1rem;
+}
+
+.left-side,
+.right-side {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 91vh;
+  width: 50vw;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 10px 7px yellow;
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+
+.left-side:hover,
+.right-side:hover {
+  filter: grayscale(0);
+}
+
+.welcome {
+  position: absolute;
+  left: 34%;
+  top: 8%;
+  z-index: 2;
+  text-align: center;
+}
+
+.welcome h1 {
+  width: 30rem;
+  padding: 1rem;
+  color: black;
+  background-color: yellow;
+  border: 3px solid black;
+  border-radius: 1rem;
+}
+
+.welcome p {
+  font-weight: 700;
+  width: 15rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  color: black;
+  background-color: yellow;
+  border: 3px solid black;
+  border-radius: 1rem;
+}
+
+/**************************/
+/*         Globals        */
+/**************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}

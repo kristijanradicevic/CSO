@@ -1,0 +1,87 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  -webkit-box-shadow: inset 0px 0px 10px 1px rgba(255, 255, 0, 1);
+  -moz-box-shadow: inset 0px 0px 10px 1px rgba(255, 255, 0, 1);
+  box-shadow: inset 0px 0px 10px 1px rgba(255, 255, 0, 1);
+  z-index: 1;
+}
+.left-side {
+  background-image: url("./assets/img/candidate.jpg");
+  margin-right: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: yellow;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+  }
+  ul {
+    color: yellow;
+  }
+}
+.right-side {
+  background-image: url("./assets/img/school.jpg");
+  margin-left: 1rem;
+}
+.left-side,
+.right-side {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 91vh;
+  width: 50vw;
+  // Shadow
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0px 0px 10px 7px rgba(255, 255, 0, 1);
+  -moz-box-shadow: inset 0px 0px 10px 7px rgba(255, 255, 0, 1);
+  box-shadow: inset 0px 0px 10px 7px rgba(255, 255, 0, 1);
+  // Gray scale
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.left-side:hover,
+.right-side:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.welcome {
+  //   width: 30rem;
+  position: absolute;
+  left: 34%;
+  top: 8%;
+  z-index: 2;
+  text-align: center;
+
+  h1 {
+    width: 30rem;
+    padding: 1rem;
+    color: black;
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 1rem;
+  }
+
+  p {
+    font-weight: 700;
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: black;
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 1rem;
+  }
+}

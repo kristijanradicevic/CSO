@@ -1,3 +1,6 @@
+body {
+  overflow: hidden;
+}
 .container {
   padding: 2rem;
   display: flex;
@@ -33,6 +36,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 3rem;
+    text-align: left;
 
     ul {
       color: yellow;
@@ -97,29 +101,49 @@
 .welcome {
   //   width: 30rem;
   position: absolute;
-  left: 34%;
+  left: 39%;
   top: 8%;
   z-index: 2;
   text-align: center;
 
   h1 {
-    width: 30rem;
+    font-size: 1.5rem;
+    width: 20rem;
     padding: 1rem;
     color: black;
-    background-color: yellow;
+    background-color: rgba($color: #ffff00, $alpha: 0.7);
     border: 3px solid black;
     border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 41px 9px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 41px 9px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 41px 9px rgba(0, 0, 0, 1);
   }
 
   p {
+    // text-transform: uppercase;
     font-weight: 700;
-    width: 15rem;
+    font-size: 1rem;
+    width: 10rem;
     margin: 0 auto;
     margin-top: 1rem;
     padding: 1rem;
     color: black;
-    background-color: yellow;
+    background-color: rgba($color: #ffff00, $alpha: 0.8);
     border: 3px solid black;
     border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 41px 9px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 41px 9px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 41px 9px rgba(0, 0, 0, 1);
+  }
+}
+
+.logo {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+
+  img {
+    height: 150px;
+    width: 150px;
   }
 }

@@ -24,9 +24,14 @@ body {
   z-index: 1;
 }
 
+.container a {
+  text-decoration: none;
+}
+
 .left-side {
   background-image: url("./assets/img/candidate.jpg");
   margin-right: 1rem;
+  margin-left: 9px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -92,11 +97,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 91vh;
-  width: 50vw;
+  width: 46vw;
   border-radius: 6px;
   box-shadow: inset 0px 0px 10px 7px yellow;
   filter: grayscale(100%);
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .left-side:hover,
@@ -128,7 +134,7 @@ body {
   font-size: 1rem;
   width: 10rem;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1rem;
   color: black;
   background-color: rgba(255, 255, 0, 0.8);
@@ -140,12 +146,14 @@ body {
 .logo {
   z-index: 2;
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
+  left: 44.7%;
 }
 
 .logo img {
   height: 150px;
   width: 150px;
+  opacity: 0.9;
 }
 
 /**************************/
